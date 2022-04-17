@@ -1,0 +1,190 @@
+/**
+* CSS
+* 
+* @version 2.0
+* @author Vaska 
+*
+* There are also some obscure rules in base.css
+*/
+
+body {
+	font-size: 14px!important;
+font-family: 'Proza Libre', sans-serif;
+/*
+	font-family: 'Space Mono', monospace;
+    */
+	background: #E0DACC00;
+	color: #000;
+	line-height: 1.4em;
+	text-align: left;
+	/* font-weight: 300; */
+}
+
+
+.center {
+  display: block;
+  margin-left: -35px;
+  margin-right: auto;
+  margin-top: 90px;
+  width: 100px;
+
+}
+
+canvas { 
+    position:fixed; 
+    top:0; 
+    left:0; 
+    z-index:1; 
+}
+
+#contenu { 
+    position:relative; 
+    z-index:2; 
+}
+
+
+hr {
+    max-width: 700px!important;
+    margin: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+sub {
+	background-color: rgba(250, 170, 0, 1);
+}
+
+sub1 {
+	background-color: rgba(156, 145, 196, 1);
+}
+
+/* link scheme */
+/* you can customize links further down the page too */
+a:link { text-decoration: none; color: #272635; }
+a:visited { text-decoration: none; color: #272635; }
+a:hover { text-decoration: underline; }
+a:active { text-decoration: none; color: #f5cfff; }
+a img { border: none; }
+audio:focus { outline: none; }
+
+/* general styles */
+small { font-size: 9px; }
+code { font-family: monospace; }
+blockquote { padding-left: 9px; }
+
+/* headings */
+h1 { font-size: 16px; margin-bottom: 1em; font-weight: bold; }
+h2 { font-size: 16px; margin-bottom: 1em; font-weight: bold; }
+h3 { font-size: 16px; margin-bottom: 1em; }
+h4 { font-size: 16px; margin-bottom: 1em; }
+
+/* paragraph width */
+#index p { margin-bottom: 1em; }
+#exhibit p, code, blockquote { width: 525px; margin-top: 85px; margin-bottom: 1em;
+ line-height: 2.3em; }
+
+#exhibit p2 { font-family: 'Proza Libre', sans-serif;  margin-bottom: 1em;
+ line-height: 1.5em; }
+
+/* highlighter style - maybe you want to change colors? */
+.highlight { background: #ccff00; color: #000; }
+
+/* never adjust the margin or padding here unless you seriously know what you are doing */
+/* think #index .container and #exhibit .container for only padding adjustments */
+#index { width: 230px; 
+    background: #D9D0BF00;
+/*background: #B58FA7;  line-height: 1.3em; */ 
+/*background: #EAE7E4;*/
+}
+#exhibit { margin: 0 0 0 230px; z-index: 2;}
+
+/* styling the index */
+#index ul { list-style: none; margin: 15px; width: 700px!important; }
+#index ul.section { margin-bottom: 2em; }
+#index ul.subsection {  }
+
+/* the follow rules for index are not required */
+/* they are mostly for complex customization */
+/* for tag display */
+#index ul#all_tags { list-style-type: none; margin-bottom: 1em; }
+#index ul#all_tags li { display: inline; margin-right: 30px; }
+#index ul#all_tags li a {  }
+
+/* styles for the section titles */
+#index ul.section span.section_title, 
+#index ul.section span.section_title a 
+{ color: black; }
+
+/* active section title */
+#index span.active_section_title,
+#index span.active_section_title a { font-weight: bold; }
+
+/* active exhibit title parts */
+/* color of active exhibit title link and font-weight */
+li.active a:link, li a.active, li.active a:hover, li a.active, li.active a:active, li a.active, 
+li.active a:visited, li a.active, li span.active, #index ul.section li.active a:link, 
+#index ul.section li.active a:hover, #index ul.section li.active a:active, #index ul.section li.active a:visited
+{ font-weight: normal; color: #00f;}
+
+/* additional #index options */
+#index ul li .password a { /* background: url(../img/locked.gif) right center no-repeat; padding-right: 18px; */ }
+
+/* the "new" indicator */
+#index ul li sup.new_exhibit { color: #0c0; font-weight: bold; text-transform: uppercase; font-size: 8px; vertical-align: top; }
+#index ul li sup.new_exhibit:before { color: #0c0; font-weight: bold; text-transform: uppercase; font-size: 8px; vertical-align: top; content: "New"; }
+/* end styling for index */
+
+/* links styles only for the #index region */
+#index a:link {  } 
+#index a:visited {  }
+#index a:hover {     color: #fff!important; } 
+#index a:active {  } 
+
+/* links styles only for the #exhibit region */
+#exhibit a:link { text-decoration: underline; }
+#exhibit a:visited {  }
+#exhibit a:hover { text-decoration: none; } 
+#exhibit a:active {  } 
+
+/* links styles just for h1 title of site (your name/logo) */
+#index h1 a { font-weight: normal; text-decoration: none; color: #000; }
+
+/* this is where you adjust your paddings for #index and #exhibit together */
+.container {
+    margin-left: 100px;
+    width: 200px!important;
+}
+
+.container2 {
+    margin-left: 100px;
+    width: 100px!important;
+}
+
+
+.container3 {
+    margin-left: 100px;
+    width: 900px!important;
+
+}
+
+#exhibit2 p, code, blockquote {
+    color: #000;
+    font-size: 16px;
+    line-height: 1.5;
+font-family: 'Proza Libre', sans-serif;
+    width: 95%!important;
+    margin-left: 14px;
+    margin-bottom: 50px;
+    margin-top: 0px;
+    /* line-height: 1.3em; */
+    text-align: left;
+}
+
+/* this is where you pad them separately */
+#index .container { margin-left: 15px; }
+#exhibit .container { z-index: 2;  }
+
+/* size and style of titles and captions (not mobile though) */
+.captioning { margin-top: 2px; }
+.title { font-size: 0.7em; font-style: italic; line-height: 1.2em; }
+.caption { font-size: 0.7em; font-style: italic; line-height: 1.2em; }
